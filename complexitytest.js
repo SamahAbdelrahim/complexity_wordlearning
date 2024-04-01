@@ -37,25 +37,26 @@ timeline.push(trial1)
 const instructions = {
     type: jsPsychHtmlKeyboardResponse,
     type: jsPsychHtmlButtonResponse,
-    stimulus: '<p><font size="3"> you will use a slider to make judgements about objects.</font></p>',
+    stimulus: '<p><font size="3"> You will use a slider to make judgements about objects. Moving the slider to the left indicates simplicity, right indicates complexity. </font></p>',
     choices: ['Continue']
 };
 timeline.push(instructions);
 
 
 
-var trial = {
-  type: jsPsychImageSliderResponse,
-  prompt: "<p>How complex is this object?</p>",
-  stimulus: 'firstimg.png',
-  labels: ['simple', 'complex'],
-  stimulus_height: [150]
-};
+// var trial = {
+//   type: jsPsychImageSliderResponse,
+//   prompt: "<p>How complex is this object?</p>",
+//   stimulus: 'firstimg.png',
+//   labels: ['simple', 'complex'],
+//   stimulus_height: [150]
+// };
 
-timeline.push(trial);
+// timeline.push(trial);
 
 // const response = await fetch('jspsych_parameters.json');
 // const images = await response.json();
+
 var imagesarray1 = [];
 let images = ["13-1020- 6 - 031.png", "19-1022- 4- 031.png", "3- 1016 - 10- corrugated steel.png", "25-1023- 5- 031.png", "14-1020- 9 - denim.png", "4- 1016 - 11- painted metal 007.png", "9- 1017- 10- corrugated steel.png", "27-cylinder-corrugated steel.png", "5- 1016 - 18- metal 007.png", "1- 1016 - 1016 - 1- 031.png", "26-1023- 7 - denim.png", "12-1020- 4- 074.png", "10- 1017- 11- printedmaterial 007.png", "18-1022- 3- 074.png", "8- 1017- 8 - denim.png", "16-1020- 11 - printedmaterial 007.png", "21-1022- 9 - corrugated steel.png", "15-1020- 10 - corrugated steel.png", "2- 1016 - 9 - denim .png", "17-1020- 12- 007.png", "20-1022- 6 - denim.png", "6- 1017- 5- 074.png", "11-1017- 14- 007.png", "7- 1017- 6- 031.png", "24-1023- 3 - 074.png", "22-1022- 13 - printedmaterial 007.png", "23-1022- 16- 007.png"]
 for (let i = 0; i < images.length; ++i) {
