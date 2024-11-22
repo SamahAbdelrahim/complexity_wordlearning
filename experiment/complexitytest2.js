@@ -98,7 +98,7 @@ var block1 = {
             stimulus: jsPsych.timelineVariable('stimulus'),
             labels: ['simple', 'complex'],
             prompt: "<p>How complex is this object?</p>",
-            stimulus_height: [20]
+            stimulus_height: [5]
         },
     ],
     timeline_variables: imagesarray1,
