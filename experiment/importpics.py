@@ -1,7 +1,7 @@
 import json
 import os
 
-stimulus_folder = r'/Users/samahabdelrahim/git-repos/complexity_exp/list1'
+stimulus_folder = r'/Users/samahabdelrahim/git-repos/complexity_wordlearning/experiment/list1'
 stimuli = []
 
 for stimulus in os.listdir(stimulus_folder):
@@ -18,7 +18,7 @@ with open('jspsych_parameters1.json', 'w') as file:
 
 
 
-stimulus_folder2 = r'/Users/samahabdelrahim/git-repos/complexity_exp/list2'
+stimulus_folder2 = r'/Users/samahabdelrahim/git-repos/complexity_wordlearning/experiment/list2'
 stimuli2 = []
 
 for stimulus in os.listdir(stimulus_folder2):
@@ -35,7 +35,7 @@ with open('jspsych_parameters2.json', 'w') as file:
 
 
 
-stimulus_folder3 = r'/Users/samahabdelrahim/git-repos/complexity_exp/list3'
+stimulus_folder3 = r'/Users/samahabdelrahim/git-repos/complexity_wordlearning/experiment/list3'
 stimuli3 = []
 
 for stimulus in os.listdir(stimulus_folder3):
@@ -52,7 +52,7 @@ with open('jspsych_parameters3.json', 'w') as file:
 
 
 
-stimulus_folder4 = r'/Users/samahabdelrahim/git-repos/complexity_exp/list4'
+stimulus_folder4 = r'/Users/samahabdelrahim/git-repos/complexity_wordlearning/experiment/list4'
 stimuli4 = []
 
 for stimulus in os.listdir(stimulus_folder4):
@@ -68,7 +68,7 @@ with open('jspsych_parameters4.json', 'w') as file:
 
 
 
-stimulus_folder5 = r'/Users/samahabdelrahim/git-repos/complexity_exp/list5'
+stimulus_folder5 = r'/Users/samahabdelrahim/git-repos/complexity_wordlearning/experiment/list5'
 stimuli5 = []
 
 for stimulus in os.listdir(stimulus_folder5):
@@ -84,7 +84,7 @@ with open('jspsych_parameters5.json', 'w') as file:
 
 
 
-stimulus_folder6 = r'/Users/samahabdelrahim/git-repos/complexity_exp/list6'
+stimulus_folder6 = r'/Users/samahabdelrahim/git-repos/complexity_wordlearning/experiment/list6'
 stimuli6 = []
 
 for stimulus in os.listdir(stimulus_folder6):
