@@ -1,10 +1,15 @@
 import json
 import os
 
-stimulus_folder = r'/Users/samahabdelrahim/git-repos/complexity_wordlearning/experiment/list1'
+# Get the directory of the current script
+script_folder = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the path to the 'list1' folder dynamically
+stimulus_folder1 = os.path.join(script_folder, 'list1')
+
 stimuli = []
 
-for stimulus in os.listdir(stimulus_folder):
+for stimulus in os.listdir(stimulus_folder1):
    if '.png' in stimulus:
       stimuli.append(stimulus)
         
@@ -18,7 +23,11 @@ with open('jspsych_parameters1.json', 'w') as file:
 
 
 
-stimulus_folder2 = r'/Users/samahabdelrahim/git-repos/complexity_wordlearning/experiment/list2'
+script_folder = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the path to the 'list1' folder dynamically
+stimulus_folder2 = os.path.join(script_folder, 'list2')
+
 stimuli2 = []
 
 for stimulus in os.listdir(stimulus_folder2):
@@ -34,8 +43,11 @@ with open('jspsych_parameters2.json', 'w') as file:
 
 
 
+script_folder = os.path.dirname(os.path.abspath(__file__))
 
-stimulus_folder3 = r'/Users/samahabdelrahim/git-repos/complexity_wordlearning/experiment/list3'
+# Construct the path to the 'list1' folder dynamically
+stimulus_folder3 = os.path.join(script_folder, 'list3')
+
 stimuli3 = []
 
 for stimulus in os.listdir(stimulus_folder3):
@@ -52,7 +64,11 @@ with open('jspsych_parameters3.json', 'w') as file:
 
 
 
-stimulus_folder4 = r'/Users/samahabdelrahim/git-repos/complexity_wordlearning/experiment/list4'
+script_folder = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the path to the 'list1' folder dynamically
+stimulus_folder4 = os.path.join(script_folder, 'list4')
+
 stimuli4 = []
 
 for stimulus in os.listdir(stimulus_folder4):
@@ -68,7 +84,11 @@ with open('jspsych_parameters4.json', 'w') as file:
 
 
 
-stimulus_folder5 = r'/Users/samahabdelrahim/git-repos/complexity_wordlearning/experiment/list5'
+script_folder = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the path to the 'list1' folder dynamically
+stimulus_folder5 = os.path.join(script_folder, 'list5')
+
 stimuli5 = []
 
 for stimulus in os.listdir(stimulus_folder5):
@@ -84,7 +104,11 @@ with open('jspsych_parameters5.json', 'w') as file:
 
 
 
-stimulus_folder6 = r'/Users/samahabdelrahim/git-repos/complexity_wordlearning/experiment/list6'
+script_folder = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the path to the 'list1' folder dynamically
+stimulus_folder6 = os.path.join(script_folder, 'list6')
+
 stimuli6 = []
 
 for stimulus in os.listdir(stimulus_folder6):
