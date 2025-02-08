@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const ComplexityLog = require('./variables/variables-logger.js'); // Import the new model
 
 const app = express();
-const port = process.env.PORT || 3005;
+const port = process.env.PORT || 3006;
 
 // Middleware to parse JSON
 app.use(express.json());
@@ -38,10 +38,10 @@ app.post('/api/log', (req, res) => {
         console.error('Error in POST request:', error);
         res.status(500).send('Internal Server Error');
     }
-    const { rt, trial_type, trial_index, time_elapsed, internal_node_id, subject, response, theword, block, study_id, session_id } = req.body;
+    const { rt, trial_type, trial_index, time_elapsed, internal_node_id, subject, response, pic, stimulus, block, study_id, session_id } = req.body;
 
     // Use the new model for logging
-    const newLog = new ComplexityLog({ rt, trial_type, trial_index, time_elapsed, internal_node_id, subject, response, theword, block, study_id, session_id });
+    const newLog = new ComplexityLog({ rt, trial_type, trial_index, time_elapsed, internal_node_id, subject, response, pic, stimulus, block, study_id, session_id });
 
     newLog.save()
         .then(() => res.send('Action logged successfully'))

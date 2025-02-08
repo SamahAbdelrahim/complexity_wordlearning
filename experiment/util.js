@@ -15,9 +15,10 @@ function logExpData(data) {
         internal_node_id: parseFloat(data.internal_node_id), // Parse string to number
         subject: data.subject_id,
         response: JSON.stringify(data.response),
-        theword: data.theword, 
-        block: data.theblock,
+        pic: data.pic, 
+        block: data.block,
         study_id: data.study_id,
+        stimulus: data.stimulus, 
         session_id: data.session_id,
     };
 
