@@ -1,0 +1,31 @@
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=3, fig.height=3, fig.crop = F, 
+                      fig.pos = "tb", fig.path='figs/',
+                      echo=F, warning=F, cache=F, 
+                      message=F, sanitize = T)
+```
+
+```{r, libraries}
+library(png)
+library(grid)
+library(ggplot2)
+library(xtable)
+library(tidyverse)
+library(here)
+library(lme4)  
+library(papaja)
+library(knitr)        # for knitting RMarkdown 
+```
+
+```{r, data}
+data <- read_csv(here("data", "data.csv"))
+
+df <- data %>% filter(block == "blockpics") %>% select("subject", "block", "response", "pic") %>% 
+  mutate(response = as.factor(response), pic = as.factor(pic))
+```
+
+
+``` {r, fig.width=6, fig.height=3}
+df %>% group_by(pic) %>% summarise(n = n()) 
+df %>% filter (pic == "list4/11-34-9-fabric05-AB.png") 
+```
