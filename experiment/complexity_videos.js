@@ -23,7 +23,7 @@ var jsPsych = initJsPsych({
          Promise.all(all_trials.map(trial => logExpData(trial)))
          .then(() => {
              console.log("All data logged, redirecting...");
-             window.location.href = "https://app.prolific.com/submissions/complete?cc=C183XD81";
+             //window.location.href = "https://app.prolific.com/submissions/complete?cc=C183XD81";
          })
          .catch(error => {
              console.error("Failed to log all data", error);
@@ -44,43 +44,9 @@ function shuffleArray(array) {
     return array;
 }
 
-let images1 = ["27-5-5-corrugatedsteel-A.png", "9-27-9-corrguatedsteel-A.png", "11-34-9-metal007-AB.png", "30-38-4-074-AB.png", "19-1024-4-031-AB.png", "10-3-8-corrugatedsteel-A.png", "25-4-5-031-AB.png", "28-2000-7-printedmaterial007-A.png", "4-68-9-printedmaterial007-A.png", "20-64-6-fabric05-AB.png", "18-1022-2-074-AB.png", "5-13-9-metal007-AB.png", "7-15-8-fabric031-AB.png", "8-25-8-fabric05-AB.png", "13-57-6-031-AB.png", "16-53-11-printedmaterial007-A.png", "15- 2021-10-corrugated steel-A.png", "17-224-12-metal007-AB.png", "23-69-16-metal007-AB.png", "29-17-7-metal007-AB.png", "1-1016-1-031-A.png", "26-276-3-fabric05-AB.png", "22-89-13-printedmaterial007-A.png", "3-1016-6-corrugatedsteel-A.png", "2-42-5-fabric05-AB.png", "24-32-3-074-AB.png", "14-59-9-fabric05-AB.png", "6-1017-5-074-AB.png", "21-82-9-corrugatedsteel-A.png", "12-87-7-metal007-AB.png"]
-// images1 = images1.map(name => name.replace(/\s+/g, "-").replace(/-+/g, "-"));
-let images2 = ["17-224-12-074-AB.png", "19-1024-4-fabric05-AB.png", "4-68-9-metal007-AB.png", "24-32-3-031-AB.png", "1-1016-1-fabric05-AB.png", "13-57-6-fabric05-AB.png", "23-69-16-074-AB.png", "7-15-8-fabric05-AB.png", "5-13-9-031-AB.png", "26-276-3-corrugatedsteel-A.png", "14-59-9-corrugatedsteel-A.png", "6-1017-5-031-AB.png", "20-64-6-corrugatedsteel-A.png", "25-4-5-fabric05-AB.png", "11-34-9-074-AB.png", "8-25-8-corrugatedsteel-A.png", "21-82-9-printedmaterial007-A.png", "12-87-7-031-AB.png", "22-89-13-metal007-AB.png", "27-5-5-printedmaterial007-A.png", "2-42-5-corrugatedsteel-A.png", "16-53-11-metal007-AB.png", "10-3-8-metal007-AB.png", "29-17-7-074-AB.png", "3-1016-6-printedmaterial007-A.png", "9-27-9-printedmaterial007-A.png", "18-1022-2-031-AB.png", "28-2000-7-metal007-AB.png", "30-38-4-031-AB.png", "15- 2021-10-printedmaterial 007- AB.png"]
-let images3 = ["11-34-9-031-AB.png", "9-27-9-007-AB.png", "12-87-7-fabric05-AB.png", "20-64-6-printedmaterial007-A.png", "1-1016-1-corrugated steel-AB.png", "5-13-9-074-AB.png", "6-1017-5-fabric05-AB.png", "29-17-7-031-AB.png", "22-89-13-074-AB.png", "17-224-12-031-AB.png", "13-57-6-corrugatedsteel-A.png", "27-5-5-metal007-AB.png", "16-53-11-074-AB.png", "19-1024-4-corrugatedsteel-A.png", "25-4-5-corrguatedsteel-A.png", "24-32-3-fabric05-AB.png", "14-59-9-printedmaterial007-A.png", "7-15-8-corrugatedsteel-A.png", "2-42-5-printedmaterial007-A.png", "4-68-9-031-AB.png", "3-1016-6-printedmaterial007-AB.png", "10-3-8-074-AB.png", "8-25-8-printedmaterial007-A.png", "26-276-3-printedmaterial007-A.png", "28-2000-7-074-AB.png", "18-1022-2-fabric05-AB.png", "23-69-16-031-AB.png", "15- 2021-10-007- A.png", "30-38-4-fabric05-AB.png", "21-82-9-metal007-AB.png"]
-let images4 = ["16-53-11-031-AB.png", "1-1016-1-paintedmetal007-AB.png", "15- 2021-10-074- A.png", "28-2000-7-031-AB.png", "14-59-9-007-AB.png", "21-82-9-031-AB.png", "2-42-5-metal007-AB.png", "3-1016-6-074-AB.png", "6-1017-5-corrugatedsteel-A.png", "8-25-8-007-AB.png", "5-13-9-fabric05-AB.png", "26-276-3-metal007-AB.png", "27-5-5-074-AB.png", "10-3-8-031-AB.png", "12-87-7-corrugatedsteel-A.png", "4-68-9-074-AB.png", "30-38-4-corrugatedsteel-A.png", "18-1022-2-corrugatedsteel-A.png", "20-64-6-metal007-AB.png", "29-17-7-fabric05-AB.png", "7-15-8-printedmaterial007-A.png", "11-34-9-fabric05-AB.png", "19-1024-4-printedmaterial007-A.png", "17-224-12-fabric05-AB.png", "25-4-5-printedmaterial007-A.png", "24-32-3-corrugatedsteel-A.png", "22-89-13-031-AB.png", "23-69-16-fabric05-AB.png", "9-27-9-074-AB.png", "13-57-6-printedmaterial007-A.png"]
-let images5 = ["5-13-9-corrguated steel-A.png", "17-224-12-corrugatedsteel-A.png", "29-17-7-corrugatedsteel-A.png", "12-87-7-printedmaterial007-A.png", "26-276-3-074-AB.png", "18-1022-2-printedmaterial007-A.png", "14-59-9-074-AB.png", "21-82-9-031-AB.png", "30-38-4-printedmaterial-A.png", "3-1016-6-031-AB.png", "9-27-9-031-AB.png", "15- 2021-10-031- AB.png", "1-1016-1-metal007-AB.png", "7-15-8-metal007-AB.png", "11-34-9-corrugatedsteel-A.png", "19-1024-4-metal007-AB.png", "22-89-13-fabric05-AB.png", "23-69-16-corrugatedsteel-A.png", "2-42-5-074-AB.png", "28-2000-7-fabric05-AB.png", "25-4-5-metal007-AB.png", "13-57-6-007-AB.png", "20-64-6-074-AB.png", "10-3-8-fabric05-AB.png", "8-25-8-074-AB.png", "16-53-11-fabric05-AB.png", "6-1017-5-printedmaterial007-A.png", "4-68-9-fabric05-AB.png", "24-32-3-printedmaterial007-A.png", "27-5-5-031-AB.png"]
-let images6 = ["9-27-9-fabric05-AB.png", "15- 2021-10-05- AB.png", "4-68-9-corrugatedsteel-A.png", "28-2000-7-corrugatedsteel-A.png", "3-1016-6-fabric05-AB.png", "20-64-6-031-AB.png", "26-276-3-031-AB.png", "8-25-8-031-AB.png", "16-53-11-corrugatedsteel-A.png", "5-13-9-printed material 007-A.png", "18-1022-2-metal007-AB.png", "11-34-9-printedmaterial007-A.png", "14-59-9-031-AB.png", "7-15-8-074-A.png", "22-89-13-corrugatedsteel-A.png", "29-17-7-printedmaterial007-A.png", "6-1017-5-metal007-AB.png", "10-3-8-printedmaterial007-A.png", "19-1024-4-074-AB.png", "13-57-6-074-AB.png", "2-42-5-031-AB.png", "24-32-3-metal007-AB.png", "30-38-4-metal007-AB.png", "25-4-5-074-AB.png", "23-69-16-printedmaterial007-A.png", "21-82-9-fabric05-AB.png", "17-224-12-printedmaterial007-A.png", "27-5-5-fabric05-AB.png", "1-1016-1-074-AB.png", "12-87-7-007-AB.png"]
-// Keeping this template in case code below doesn't work
-// var imagesarray1 = [];
-// for (let i = 0; i < images1.length; ++i) {
-//     var img = 'list1/' +images1[i];
-//     imagesarray1.push({ stimulus: img });
-// };
+//let images1 = ["27-5-5-corrugatedsteel-A.png", "9-27-9-corrguatedsteel-A.png", "11-34-9-metal007-AB.png", "30-38-4-074-AB.png", "19-1024-4-031-AB.png", "10-3-8-corrugatedsteel-A.png", "25-4-5-031-AB.png", "28-2000-7-printedmaterial007-A.png", "4-68-9-printedmaterial007-A.png", "20-64-6-fabric05-AB.png", "18-1022-2-074-AB.png", "5-13-9-metal007-AB.png", "7-15-8-fabric031-AB.png", "8-25-8-fabric05-AB.png", "13-57-6-031-AB.png", "16-53-11-printedmaterial007-A.png", "15- 2021-10-corrugated steel-A.png", "17-224-12-metal007-AB.png", "23-69-16-metal007-AB.png", "29-17-7-metal007-AB.png", "1-1016-1-031-A.png", "26-276-3-fabric05-AB.png", "22-89-13-printedmaterial007-A.png", "3-1016-6-corrugatedsteel-A.png", "2-42-5-fabric05-AB.png", "24-32-3-074-AB.png", "14-59-9-fabric05-AB.png", "6-1017-5-074-AB.png", "21-82-9-corrugatedsteel-A.png", "12-87-7-metal007-AB.png"]
+let videos = ["27-5-5-corrugatedsteel-A.png", "9-27-9-corrguatedsteel-A.png", "11-34-9-metal007-AB.png", "30-38-4-074-AB.png", "19-1024-4-031-AB.png", "10-3-8-corrugatedsteel-A.png", "25-4-5-031-AB.png", "28-2000-7-printedmaterial007-A.png", "4-68-9-printedmaterial007-A.png", "20-64-6-fabric05-AB.png", "18-1022-2-074-AB.png", "5-13-9-metal007-AB.png", "7-15-8-fabric031-AB.png", "8-25-8-fabric05-AB.png", "13-57-6-031-AB.png", "16-53-11-printedmaterial007-A.png", "15- 2021-10-corrugated steel-A.png", "17-224-12-metal007-AB.png", "23-69-16-metal007-AB.png", "29-17-7-metal007-AB.png", "1-1016-1-031-A.png", "26-276-3-fabric05-AB.png", "22-89-13-printedmaterial007-A.png", "3-1016-6-corrugatedsteel-A.png", "2-42-5-fabric05-AB.png", "24-32-3-074-AB.png", "14-59-9-fabric05-AB.png", "6-1017-5-074-AB.png", "21-82-9-corrugatedsteel-A.png", "12-87-7-metal007-AB.png"]
 
-// Function to create image arrays with paths
-function createImageArray(images, folder) {
-    return images.map(img => ({ stimulus: `${folder}/${img}` }));
-}
-
-// Create arrays for each material group
-let imagesarray1 = createImageArray(images1, 'list1');
-let imagesarray2 = createImageArray(images2, 'list2');
-let imagesarray3 = createImageArray(images3, 'list3');
-let imagesarray4 = createImageArray(images4, 'list4');
-let imagesarray5 = createImageArray(images5, 'list5');
-let imagesarray6 = createImageArray(images6, 'list6');
-
-
-// Combine all arrays into a single array of arrays
-var arrayof_arrays = [imagesarray1,  imagesarray2, imagesarray3, imagesarray4, imagesarray5, imagesarray6]; 
-
-// Randomly select one array
-var chosenarrayindex = Math.floor(Math.random() * arrayof_arrays.length);
-var chosenarray = arrayof_arrays[chosenarrayindex];
-
-// Shuffle the chosen array
-//chosenarray = shuffleArray(chosenarray);
 
 
 var trial1 = {
