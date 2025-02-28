@@ -172,34 +172,30 @@ timeline.push(practice_demo)
 // Shuffle the practice images
 practice_image_data = jsPsych.randomization.shuffle(practice_image_data);
 
-// Practice block with slider response
+// Practice block
 var practice_complexity = {
     timeline: practice_image_data.map(item => ({
         type: jsPsychImageSliderResponse,
         stimulus: item.stimulus,
         labels: ['Simple', 'Complex'],
         prompt: "<p style='font-size:22px; margin-bottom: 15px;'>How complex is this object?</p>" +
-                "<p style='font-size:18px; color: #555;'>Move the slider to the left for <strong>simple</strong> objects and to the right for <strong>complex</strong> objects.</p>",
+        "<p style='font-size:18px; color: #555;'>Remember, Move the slider to the left for <strong>simple</strong> objects and to the right for <strong>complex</strong> objects.</p>" ,
+
         stimulus_height: 200,
         require_movement: true,
 
         on_finish: function(data) {
             var response = data.response;
-            var quartile = response < 25 ? "way left"
-                        : response < 50 ? "slightly left"
-                        : response < 75 ? "slightly right"
-                        : "way right";
-
-            var interpretation = quartile.includes("left") 
-                ? `That means you think this object is <strong>${quartile === "way left" ? "very simple" : "slightly simple"}</strong>.`
-                : `That means you think this object is <strong>${quartile === "way right" ? "very complex" : "slightly complex"}</strong>.`;
-
+            var isCorrect = (item.correct_above !== undefined && response > item.correct_above) ||
+                            (item.correct_below !== undefined && response < item.correct_below);
+            var blockname = "practice block";
+            
+            // Store data
             jsPsych.data.addDataToLastTrial({
                 pic: item.stimulus,
+                correct: isCorrect,
                 response_value: response,
-                response_quartile: quartile,
-                feedback: interpretation,
-                block: "practice block"
+                block: blockname
             });
         }
     }))
@@ -210,8 +206,24 @@ var feedback_trial = {
     type: jsPsychHtmlButtonResponse,
     stimulus: function() {
         var last_trial = jsPsych.data.getLastTrialData().values()[0];
-        return `<p style='font-size:22px;'><strong>You moved the slider ${last_trial.response_quartile}.</strong></p>
-                <p style='font-size:18px; color:#333;'>${last_trial.feedback}</p>`;
+        var response = last_trial.response;
+        var item = practice_image_data.find(img => img.stimulus === last_trial.pic);
+        var isCorrect = (item.correct_above !== undefined && response > item.correct_above) ||
+                        (item.correct_below !== undefined && response < item.correct_below);
+
+        return isCorrect
+            ? `<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>
+               <p style='font-size:18px; color:#333;'>${
+                item.correct_above !== undefined 
+                ? "Remember: Move the slider <strong>right</strong> for complex objects."
+                : "Remember: Move the slider <strong>left</strong> for simple objects."
+               }</p>`
+            : `<p style='color:red; font-size:22px; font-weight:bold;'>❌ Oops! Try again.</p>
+               <p style='font-size:18px; color:#333;'>${
+                item.correct_above !== undefined 
+                ? "You should slide <strong>right</strong> for complex objects."
+                : "You should slide <strong>left</strong> for simple objects."
+               }</p>`;
     },
     choices: ["Next"],
     button_html: '<button class="jspsych-btn" style="font-size:18px; padding: 12px 24px; background-color:#8C1515; color:white; border:none; border-radius:8px; cursor:pointer;">%choice%</button>'
@@ -225,7 +237,7 @@ var full_practice_complexity = {
     ]))
 };
 
-// Add to timeline
+
 timeline.push(full_practice_complexity);
 
 var start = {
