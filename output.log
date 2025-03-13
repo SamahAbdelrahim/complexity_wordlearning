@@ -3961,3 +3961,2282 @@ req.body
   stimulus: 'list4/17-224-12-fabric05-AB.png',
   session_id: '67a9870009e9bc04b7ea5ad9'
 }
+req.body
+{
+  rt: 2313,
+  trial_type: 'instructions',
+  trial_index: 0,
+  time_elapsed: 2314,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 8751,
+  trial_type: 'instructions',
+  trial_index: 1,
+  time_elapsed: 11066,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 4382,
+  trial_type: 'image-slider-response',
+  trial_index: 2,
+  time_elapsed: 15450,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '10',
+  pic: 'square.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'square.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 1429,
+  trial_type: 'html-button-response',
+  trial_index: 3,
+  time_elapsed: 16880,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>left</strong> for simple objects.</p>",
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 5453,
+  trial_type: 'image-slider-response',
+  trial_index: 6,
+  time_elapsed: 26238,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '83',
+  pic: 'concave.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'concave.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 2815,
+  trial_type: 'image-slider-response',
+  trial_index: 4,
+  time_elapsed: 19696,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '64',
+  pic: 'heptagon.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'heptagon.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 951,
+  trial_type: 'html-button-response',
+  trial_index: 7,
+  time_elapsed: 27190,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>right</strong> for complex objects.</p>",
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 1087,
+  trial_type: 'html-button-response',
+  trial_index: 5,
+  time_elapsed: 20784,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>right</strong> for complex objects.</p>",
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 2263,
+  trial_type: 'image-slider-response',
+  trial_index: 8,
+  time_elapsed: 29453,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '9',
+  pic: 'circle.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'circle.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 1038,
+  trial_type: 'html-button-response',
+  trial_index: 9,
+  time_elapsed: 30492,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>left</strong> for simple objects.</p>",
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 994,
+  trial_type: 'instructions',
+  trial_index: 10,
+  time_elapsed: 31486,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3477,
+  trial_type: 'image-slider-response',
+  trial_index: 11,
+  time_elapsed: 34964,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '92',
+  pic: 'list3/24-32-3-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/24-32-3-fabric05-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3495,
+  trial_type: 'image-slider-response',
+  trial_index: 12,
+  time_elapsed: 38460,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '91',
+  pic: 'list3/7-15-8-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/7-15-8-corrugatedsteel-A.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3009,
+  trial_type: 'image-slider-response',
+  trial_index: 13,
+  time_elapsed: 41470,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '91',
+  pic: 'list3/23-69-16-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/23-69-16-031-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3425,
+  trial_type: 'image-slider-response',
+  trial_index: 14,
+  time_elapsed: 44896,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '78',
+  pic: 'list3/12-87-7-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/12-87-7-fabric05-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 2677,
+  trial_type: 'image-slider-response',
+  trial_index: 15,
+  time_elapsed: 47574,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '76',
+  pic: 'list3/11-34-9-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/11-34-9-031-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 2978,
+  trial_type: 'image-slider-response',
+  trial_index: 16,
+  time_elapsed: 50552,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '61',
+  pic: 'list3/29-17-7-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/29-17-7-031-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3171,
+  trial_type: 'image-slider-response',
+  trial_index: 17,
+  time_elapsed: 53724,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '82',
+  pic: 'list3/28-2000-7-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/28-2000-7-074-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3295,
+  trial_type: 'image-slider-response',
+  trial_index: 19,
+  time_elapsed: 59902,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '74',
+  pic: 'list3/4-68-9-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/4-68-9-031-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 2881,
+  trial_type: 'image-slider-response',
+  trial_index: 18,
+  time_elapsed: 56606,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '63',
+  pic: 'list3/30-38-4-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/30-38-4-fabric05-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3271,
+  trial_type: 'image-slider-response',
+  trial_index: 20,
+  time_elapsed: 63174,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '89',
+  pic: 'list3/22-89-13-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/22-89-13-074-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 2493,
+  trial_type: 'image-slider-response',
+  trial_index: 21,
+  time_elapsed: 65668,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '64',
+  pic: 'list3/9-27-9-007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/9-27-9-007-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3648,
+  trial_type: 'image-slider-response',
+  trial_index: 22,
+  time_elapsed: 69316,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '65',
+  pic: 'list3/10-3-8-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/10-3-8-074-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 2941,
+  trial_type: 'image-slider-response',
+  trial_index: 23,
+  time_elapsed: 72257,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '66',
+  pic: 'list3/15- 2021-10-007- A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/15- 2021-10-007- A.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 2842,
+  trial_type: 'image-slider-response',
+  trial_index: 24,
+  time_elapsed: 75100,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '61',
+  pic: 'list3/2-42-5-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/2-42-5-printedmaterial007-A.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3483,
+  trial_type: 'image-slider-response',
+  trial_index: 25,
+  time_elapsed: 78584,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '54',
+  pic: 'list3/1-1016-1-corrugated steel-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/1-1016-1-corrugated steel-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3165,
+  trial_type: 'image-slider-response',
+  trial_index: 26,
+  time_elapsed: 81750,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '66',
+  pic: 'list3/17-224-12-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/17-224-12-031-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3605,
+  trial_type: 'image-slider-response',
+  trial_index: 27,
+  time_elapsed: 85355,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '60',
+  pic: 'list3/26-276-3-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/26-276-3-printedmaterial007-A.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 2954,
+  trial_type: 'image-slider-response',
+  trial_index: 28,
+  time_elapsed: 88310,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '61',
+  pic: 'list3/6-1017-5-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/6-1017-5-fabric05-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3071,
+  trial_type: 'image-slider-response',
+  trial_index: 29,
+  time_elapsed: 91382,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '71',
+  pic: 'list3/20-64-6-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/20-64-6-printedmaterial007-A.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3311,
+  trial_type: 'image-slider-response',
+  trial_index: 30,
+  time_elapsed: 94694,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '68',
+  pic: 'list3/21-82-9-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/21-82-9-metal007-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3455,
+  trial_type: 'image-slider-response',
+  trial_index: 31,
+  time_elapsed: 98150,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '76',
+  pic: 'list3/25-4-5-corrguatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/25-4-5-corrguatedsteel-A.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 2995,
+  trial_type: 'image-slider-response',
+  trial_index: 32,
+  time_elapsed: 101146,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '65',
+  pic: 'list3/3-1016-6-printedmaterial007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/3-1016-6-printedmaterial007-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3199,
+  trial_type: 'image-slider-response',
+  trial_index: 33,
+  time_elapsed: 104346,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '65',
+  pic: 'list3/18-1022-2-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/18-1022-2-fabric05-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 7157,
+  trial_type: 'image-slider-response',
+  trial_index: 34,
+  time_elapsed: 111504,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '73',
+  pic: 'list3/5-13-9-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/5-13-9-074-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3947,
+  trial_type: 'image-slider-response',
+  trial_index: 35,
+  time_elapsed: 115451,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '68',
+  pic: 'list3/13-57-6-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/13-57-6-corrugatedsteel-A.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3094,
+  trial_type: 'image-slider-response',
+  trial_index: 36,
+  time_elapsed: 118546,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '70',
+  pic: 'list3/27-5-5-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/27-5-5-metal007-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3557,
+  trial_type: 'image-slider-response',
+  trial_index: 37,
+  time_elapsed: 122103,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '80',
+  pic: 'list3/16-53-11-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/16-53-11-074-AB.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 2918,
+  trial_type: 'image-slider-response',
+  trial_index: 38,
+  time_elapsed: 125022,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '85',
+  pic: 'list3/19-1024-4-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/19-1024-4-corrugatedsteel-A.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3311,
+  trial_type: 'image-slider-response',
+  trial_index: 40,
+  time_elapsed: 131606,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '88',
+  pic: 'list3/8-25-8-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/8-25-8-printedmaterial007-A.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 3271,
+  trial_type: 'image-slider-response',
+  trial_index: 39,
+  time_elapsed: 128294,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  response: '83',
+  pic: 'list3/14-59-9-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list3/14-59-9-printedmaterial007-A.png',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 2496,
+  trial_type: 'instructions',
+  trial_index: 41,
+  time_elapsed: 134102,
+  internal_node_id: 0,
+  subject: '6609ce676b18122a911436dd',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c2237909fbfc1e1f3ca3af'
+}
+req.body
+{
+  rt: 7659,
+  trial_type: 'instructions',
+  trial_index: 0,
+  time_elapsed: 7663,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 20267,
+  trial_type: 'instructions',
+  trial_index: 1,
+  time_elapsed: 27934,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 9713,
+  trial_type: 'image-slider-response',
+  trial_index: 2,
+  time_elapsed: 37658,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '65',
+  pic: 'concave.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'concave.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 4892,
+  trial_type: 'image-slider-response',
+  trial_index: 4,
+  time_elapsed: 47270,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '0',
+  pic: 'circle.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'circle.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 4713,
+  trial_type: 'html-button-response',
+  trial_index: 3,
+  time_elapsed: 42375,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>right</strong> for complex objects.</p>",
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 2314,
+  trial_type: 'html-button-response',
+  trial_index: 5,
+  time_elapsed: 49586,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>left</strong> for simple objects.</p>",
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 3900,
+  trial_type: 'image-slider-response',
+  trial_index: 6,
+  time_elapsed: 53489,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '100',
+  pic: 'heptagon.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'heptagon.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 1305,
+  trial_type: 'html-button-response',
+  trial_index: 7,
+  time_elapsed: 54797,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>right</strong> for complex objects.</p>",
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 2992,
+  trial_type: 'image-slider-response',
+  trial_index: 8,
+  time_elapsed: 57793,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '0',
+  pic: 'square.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'square.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 6348,
+  trial_type: 'image-slider-response',
+  trial_index: 14,
+  time_elapsed: 88151,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '100',
+  pic: 'list4/5-13-9-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/5-13-9-fabric05-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 7514,
+  trial_type: 'image-slider-response',
+  trial_index: 12,
+  time_elapsed: 74878,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '100',
+  pic: 'list4/30-38-4-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/30-38-4-corrugatedsteel-A.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 6917,
+  trial_type: 'image-slider-response',
+  trial_index: 13,
+  time_elapsed: 81799,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '100',
+  pic: 'list4/10-3-8-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/10-3-8-031-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 8541,
+  trial_type: 'image-slider-response',
+  trial_index: 15,
+  time_elapsed: 96696,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '100',
+  pic: 'list4/24-32-3-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/24-32-3-corrugatedsteel-A.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 5243,
+  trial_type: 'image-slider-response',
+  trial_index: 16,
+  time_elapsed: 101943,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '0',
+  pic: 'list4/1-1016-1-paintedmetal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/1-1016-1-paintedmetal007-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 6544,
+  trial_type: 'image-slider-response',
+  trial_index: 17,
+  time_elapsed: 108491,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '100',
+  pic: 'list4/22-89-13-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/22-89-13-031-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 4502,
+  trial_type: 'image-slider-response',
+  trial_index: 18,
+  time_elapsed: 113000,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '100',
+  pic: 'list4/15- 2021-10-074- A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/15- 2021-10-074- A.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 5954,
+  trial_type: 'image-slider-response',
+  trial_index: 19,
+  time_elapsed: 118958,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '100',
+  pic: 'list4/4-68-9-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/4-68-9-074-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 5398,
+  trial_type: 'image-slider-response',
+  trial_index: 20,
+  time_elapsed: 124360,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '100',
+  pic: 'list4/16-53-11-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/16-53-11-031-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 6298,
+  trial_type: 'image-slider-response',
+  trial_index: 11,
+  time_elapsed: 67359,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '100',
+  pic: 'list4/6-1017-5-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/6-1017-5-corrugatedsteel-A.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 1263,
+  trial_type: 'html-button-response',
+  trial_index: 9,
+  time_elapsed: 59061,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>left</strong> for simple objects.</p>",
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 1994,
+  trial_type: 'instructions',
+  trial_index: 10,
+  time_elapsed: 61057,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 8782,
+  trial_type: 'image-slider-response',
+  trial_index: 21,
+  time_elapsed: 133146,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '99',
+  pic: 'list4/27-5-5-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/27-5-5-074-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 6535,
+  trial_type: 'image-slider-response',
+  trial_index: 22,
+  time_elapsed: 139684,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '99',
+  pic: 'list4/8-25-8-007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/8-25-8-007-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 5264,
+  trial_type: 'image-slider-response',
+  trial_index: 23,
+  time_elapsed: 144952,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '100',
+  pic: 'list4/19-1024-4-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/19-1024-4-printedmaterial007-A.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 4294,
+  trial_type: 'image-slider-response',
+  trial_index: 24,
+  time_elapsed: 149250,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '0',
+  pic: 'list4/2-42-5-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/2-42-5-metal007-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 4856,
+  trial_type: 'image-slider-response',
+  trial_index: 25,
+  time_elapsed: 154109,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '99',
+  pic: 'list4/9-27-9-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/9-27-9-074-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 7171,
+  trial_type: 'image-slider-response',
+  trial_index: 26,
+  time_elapsed: 161284,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '5',
+  pic: 'list4/13-57-6-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/13-57-6-printedmaterial007-A.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 5159,
+  trial_type: 'image-slider-response',
+  trial_index: 27,
+  time_elapsed: 166447,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '95',
+  pic: 'list4/14-59-9-007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/14-59-9-007-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 7016,
+  trial_type: 'image-slider-response',
+  trial_index: 28,
+  time_elapsed: 173467,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '3',
+  pic: 'list4/25-4-5-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/25-4-5-printedmaterial007-A.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 6467,
+  trial_type: 'image-slider-response',
+  trial_index: 29,
+  time_elapsed: 179937,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '2',
+  pic: 'list4/21-82-9-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/21-82-9-031-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 4984,
+  trial_type: 'image-slider-response',
+  trial_index: 30,
+  time_elapsed: 184924,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '1',
+  pic: 'list4/12-87-7-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/12-87-7-corrugatedsteel-A.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 5860,
+  trial_type: 'image-slider-response',
+  trial_index: 31,
+  time_elapsed: 190788,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '2',
+  pic: 'list4/28-2000-7-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/28-2000-7-031-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 5554,
+  trial_type: 'image-slider-response',
+  trial_index: 32,
+  time_elapsed: 196345,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '0',
+  pic: 'list4/3-1016-6-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/3-1016-6-074-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 6080,
+  trial_type: 'image-slider-response',
+  trial_index: 33,
+  time_elapsed: 202429,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '17',
+  pic: 'list4/20-64-6-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/20-64-6-metal007-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 4287,
+  trial_type: 'image-slider-response',
+  trial_index: 34,
+  time_elapsed: 206719,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '3',
+  pic: 'list4/18-1022-2-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/18-1022-2-corrugatedsteel-A.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 8992,
+  trial_type: 'image-slider-response',
+  trial_index: 36,
+  time_elapsed: 219965,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '64',
+  pic: 'list4/29-17-7-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/29-17-7-fabric05-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 4245,
+  trial_type: 'image-slider-response',
+  trial_index: 35,
+  time_elapsed: 210969,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '2',
+  pic: 'list4/26-276-3-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/26-276-3-metal007-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 4744,
+  trial_type: 'image-slider-response',
+  trial_index: 37,
+  time_elapsed: 224712,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '95',
+  pic: 'list4/11-34-9-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/11-34-9-fabric05-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 5279,
+  trial_type: 'image-slider-response',
+  trial_index: 38,
+  time_elapsed: 229995,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '99',
+  pic: 'list4/23-69-16-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/23-69-16-fabric05-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 6110,
+  trial_type: 'image-slider-response',
+  trial_index: 39,
+  time_elapsed: 236108,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '94',
+  pic: 'list4/7-15-8-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/7-15-8-printedmaterial007-A.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 4899,
+  trial_type: 'image-slider-response',
+  trial_index: 40,
+  time_elapsed: 241010,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  response: '96',
+  pic: 'list4/17-224-12-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list4/17-224-12-fabric05-AB.png',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 2362,
+  trial_type: 'instructions',
+  trial_index: 41,
+  time_elapsed: 243374,
+  internal_node_id: 0,
+  subject: '678c0dc1b5ffc027fc22b445',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c2253695f350590075bf5a'
+}
+req.body
+{
+  rt: 18454,
+  trial_type: 'instructions',
+  trial_index: 0,
+  time_elapsed: 18468,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 21244,
+  trial_type: 'instructions',
+  trial_index: 1,
+  time_elapsed: 39724,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 65392,
+  trial_type: 'image-slider-response',
+  trial_index: 2,
+  time_elapsed: 105132,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '18',
+  pic: 'concave.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'concave.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 8130,
+  trial_type: 'html-button-response',
+  trial_index: 3,
+  time_elapsed: 113270,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:red; font-size:22px; font-weight:bold;'>❌ Oops! Try again.</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>You should slide <strong>right</strong> for complex objects.</p>",
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 17429,
+  trial_type: 'image-slider-response',
+  trial_index: 4,
+  time_elapsed: 130708,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '0',
+  pic: 'circle.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'circle.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 1385,
+  trial_type: 'html-button-response',
+  trial_index: 5,
+  time_elapsed: 132097,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>left</strong> for simple objects.</p>",
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 10169,
+  trial_type: 'image-slider-response',
+  trial_index: 6,
+  time_elapsed: 142272,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'heptagon.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'heptagon.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 1436,
+  trial_type: 'html-button-response',
+  trial_index: 7,
+  time_elapsed: 143714,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>right</strong> for complex objects.</p>",
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 9876,
+  trial_type: 'image-slider-response',
+  trial_index: 8,
+  time_elapsed: 153597,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '0',
+  pic: 'square.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'square.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 1750,
+  trial_type: 'html-button-response',
+  trial_index: 9,
+  time_elapsed: 155352,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>left</strong> for simple objects.</p>",
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 2813,
+  trial_type: 'instructions',
+  trial_index: 10,
+  time_elapsed: 158170,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 19916,
+  trial_type: 'image-slider-response',
+  trial_index: 11,
+  time_elapsed: 178093,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/2-42-5-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/2-42-5-corrugatedsteel-A.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 14450,
+  trial_type: 'image-slider-response',
+  trial_index: 12,
+  time_elapsed: 192552,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/20-64-6-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/20-64-6-corrugatedsteel-A.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 16797,
+  trial_type: 'image-slider-response',
+  trial_index: 13,
+  time_elapsed: 209356,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/9-27-9-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/9-27-9-printedmaterial007-A.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 15759,
+  trial_type: 'image-slider-response',
+  trial_index: 14,
+  time_elapsed: 225123,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '89',
+  pic: 'list2/1-1016-1-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/1-1016-1-fabric05-AB.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 20113,
+  trial_type: 'image-slider-response',
+  trial_index: 15,
+  time_elapsed: 245243,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/25-4-5-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/25-4-5-fabric05-AB.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 12087,
+  trial_type: 'image-slider-response',
+  trial_index: 16,
+  time_elapsed: 257340,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/21-82-9-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/21-82-9-printedmaterial007-A.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 8280,
+  trial_type: 'image-slider-response',
+  trial_index: 17,
+  time_elapsed: 265626,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '26',
+  pic: 'list2/15- 2021-10-printedmaterial 007- AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/15- 2021-10-printedmaterial 007- AB.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 9807,
+  trial_type: 'image-slider-response',
+  trial_index: 18,
+  time_elapsed: 275440,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/28-2000-7-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/28-2000-7-metal007-AB.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 11599,
+  trial_type: 'image-slider-response',
+  trial_index: 19,
+  time_elapsed: 287045,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/17-224-12-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/17-224-12-074-AB.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 9666,
+  trial_type: 'image-slider-response',
+  trial_index: 20,
+  time_elapsed: 296716,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/14-59-9-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/14-59-9-corrugatedsteel-A.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 10517,
+  trial_type: 'image-slider-response',
+  trial_index: 21,
+  time_elapsed: 307238,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/18-1022-2-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/18-1022-2-031-AB.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 13607,
+  trial_type: 'image-slider-response',
+  trial_index: 22,
+  time_elapsed: 320851,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/7-15-8-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/7-15-8-fabric05-AB.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 11625,
+  trial_type: 'image-slider-response',
+  trial_index: 23,
+  time_elapsed: 332482,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/8-25-8-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/8-25-8-corrugatedsteel-A.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 11165,
+  trial_type: 'image-slider-response',
+  trial_index: 24,
+  time_elapsed: 343654,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/16-53-11-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/16-53-11-metal007-AB.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 10249,
+  trial_type: 'image-slider-response',
+  trial_index: 25,
+  time_elapsed: 353909,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/30-38-4-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/30-38-4-031-AB.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 12179,
+  trial_type: 'image-slider-response',
+  trial_index: 26,
+  time_elapsed: 366092,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/12-87-7-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/12-87-7-031-AB.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 14868,
+  trial_type: 'image-slider-response',
+  trial_index: 27,
+  time_elapsed: 380967,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '84',
+  pic: 'list2/26-276-3-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/26-276-3-corrugatedsteel-A.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 15047,
+  trial_type: 'image-slider-response',
+  trial_index: 28,
+  time_elapsed: 396021,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/4-68-9-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/4-68-9-metal007-AB.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 20042,
+  trial_type: 'image-slider-response',
+  trial_index: 29,
+  time_elapsed: 416069,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/23-69-16-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/23-69-16-074-AB.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 13796,
+  trial_type: 'image-slider-response',
+  trial_index: 30,
+  time_elapsed: 429873,
+  internal_node_id: 0,
+  subject: '661067b66f034aab3e964215',
+  response: '100',
+  pic: 'list2/10-3-8-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/10-3-8-metal007-AB.png',
+  session_id: '67c22a9d358103b654d18a86'
+}
+req.body
+{
+  rt: 5285,
+  trial_type: 'instructions',
+  trial_index: 0,
+  time_elapsed: 5288,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 6374,
+  trial_type: 'image-slider-response',
+  trial_index: 2,
+  time_elapsed: 28298,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '6',
+  pic: 'circle.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'circle.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 16631,
+  trial_type: 'instructions',
+  trial_index: 1,
+  time_elapsed: 21920,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 2463,
+  trial_type: 'html-button-response',
+  trial_index: 5,
+  time_elapsed: 39362,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>left</strong> for simple objects.</p>",
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 4424,
+  trial_type: 'image-slider-response',
+  trial_index: 4,
+  time_elapsed: 36898,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '0',
+  pic: 'square.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'square.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 4173,
+  trial_type: 'html-button-response',
+  trial_index: 3,
+  time_elapsed: 32472,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>left</strong> for simple objects.</p>",
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 3803,
+  trial_type: 'image-slider-response',
+  trial_index: 6,
+  time_elapsed: 43166,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '0',
+  pic: 'heptagon.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'heptagon.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 2316,
+  trial_type: 'html-button-response',
+  trial_index: 7,
+  time_elapsed: 45482,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:red; font-size:22px; font-weight:bold;'>❌ Oops! Try again.</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>You should slide <strong>right</strong> for complex objects.</p>",
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 4251,
+  trial_type: 'image-slider-response',
+  trial_index: 8,
+  time_elapsed: 49734,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '92',
+  pic: 'concave.png',
+  block: 'practice block',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'concave.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 1763,
+  trial_type: 'instructions',
+  trial_index: 10,
+  time_elapsed: 53883,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 5109,
+  trial_type: 'image-slider-response',
+  trial_index: 11,
+  time_elapsed: 58994,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '88',
+  pic: 'list2/3-1016-6-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/3-1016-6-printedmaterial007-A.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 2385,
+  trial_type: 'html-button-response',
+  trial_index: 9,
+  time_elapsed: 52120,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '0',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: "<p style='color:green; font-size:22px; font-weight:bold;'>✅ Correct!</p>\n" +
+    "               <p style='font-size:18px; color:#333;'>Remember: Move the slider <strong>right</strong> for complex objects.</p>",
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 5495,
+  trial_type: 'image-slider-response',
+  trial_index: 12,
+  time_elapsed: 64489,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '99',
+  pic: 'list2/13-57-6-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/13-57-6-fabric05-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 4377,
+  trial_type: 'image-slider-response',
+  trial_index: 13,
+  time_elapsed: 68868,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/4-68-9-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/4-68-9-metal007-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 5328,
+  trial_type: 'image-slider-response',
+  trial_index: 16,
+  time_elapsed: 98625,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '94',
+  pic: 'list2/25-4-5-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/25-4-5-fabric05-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 17293,
+  trial_type: 'image-slider-response',
+  trial_index: 15,
+  time_elapsed: 93296,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '56',
+  pic: 'list2/22-89-13-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/22-89-13-metal007-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 7133,
+  trial_type: 'image-slider-response',
+  trial_index: 14,
+  time_elapsed: 76002,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/28-2000-7-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/28-2000-7-metal007-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 7471,
+  trial_type: 'image-slider-response',
+  trial_index: 17,
+  time_elapsed: 106097,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/23-69-16-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/23-69-16-074-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 5189,
+  trial_type: 'image-slider-response',
+  trial_index: 18,
+  time_elapsed: 111287,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/21-82-9-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/21-82-9-printedmaterial007-A.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 5015,
+  trial_type: 'image-slider-response',
+  trial_index: 19,
+  time_elapsed: 116303,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/11-34-9-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/11-34-9-074-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 5023,
+  trial_type: 'image-slider-response',
+  trial_index: 20,
+  time_elapsed: 121327,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/15- 2021-10-printedmaterial 007- AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/15- 2021-10-printedmaterial 007- AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 5511,
+  trial_type: 'image-slider-response',
+  trial_index: 23,
+  time_elapsed: 138455,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/6-1017-5-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/6-1017-5-031-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 6701,
+  trial_type: 'image-slider-response',
+  trial_index: 21,
+  time_elapsed: 128029,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '82',
+  pic: 'list2/1-1016-1-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/1-1016-1-fabric05-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 4913,
+  trial_type: 'image-slider-response',
+  trial_index: 22,
+  time_elapsed: 132943,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/8-25-8-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/8-25-8-corrugatedsteel-A.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 22957,
+  trial_type: 'image-slider-response',
+  trial_index: 24,
+  time_elapsed: 161413,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/5-13-9-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/5-13-9-031-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 4701,
+  trial_type: 'image-slider-response',
+  trial_index: 25,
+  time_elapsed: 166115,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/2-42-5-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/2-42-5-corrugatedsteel-A.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 12221,
+  trial_type: 'image-slider-response',
+  trial_index: 30,
+  time_elapsed: 199337,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/24-32-3-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/24-32-3-031-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 7031,
+  trial_type: 'image-slider-response',
+  trial_index: 26,
+  time_elapsed: 173147,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/27-5-5-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/27-5-5-printedmaterial007-A.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 4763,
+  trial_type: 'image-slider-response',
+  trial_index: 29,
+  time_elapsed: 187115,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/29-17-7-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/29-17-7-074-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 4393,
+  trial_type: 'image-slider-response',
+  trial_index: 28,
+  time_elapsed: 182351,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/18-1022-2-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/18-1022-2-031-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 4809,
+  trial_type: 'image-slider-response',
+  trial_index: 27,
+  time_elapsed: 177957,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/10-3-8-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/10-3-8-metal007-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 7015,
+  trial_type: 'image-slider-response',
+  trial_index: 31,
+  time_elapsed: 206353,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/12-87-7-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/12-87-7-031-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 5047,
+  trial_type: 'image-slider-response',
+  trial_index: 32,
+  time_elapsed: 211401,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/26-276-3-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/26-276-3-corrugatedsteel-A.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 4424,
+  trial_type: 'image-slider-response',
+  trial_index: 34,
+  time_elapsed: 220409,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/7-15-8-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/7-15-8-fabric05-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 4581,
+  trial_type: 'image-slider-response',
+  trial_index: 33,
+  time_elapsed: 215984,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/30-38-4-031-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/30-38-4-031-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 5195,
+  trial_type: 'image-slider-response',
+  trial_index: 35,
+  time_elapsed: 225605,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/17-224-12-074-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/17-224-12-074-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 6023,
+  trial_type: 'image-slider-response',
+  trial_index: 36,
+  time_elapsed: 231630,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/16-53-11-metal007-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/16-53-11-metal007-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 3768,
+  trial_type: 'image-slider-response',
+  trial_index: 37,
+  time_elapsed: 235399,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/19-1024-4-fabric05-AB.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/19-1024-4-fabric05-AB.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 4307,
+  trial_type: 'image-slider-response',
+  trial_index: 39,
+  time_elapsed: 244203,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/14-59-9-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/14-59-9-corrugatedsteel-A.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 4495,
+  trial_type: 'image-slider-response',
+  trial_index: 38,
+  time_elapsed: 239895,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '100',
+  pic: 'list2/9-27-9-printedmaterial007-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/9-27-9-printedmaterial007-A.png',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 3236,
+  trial_type: 'instructions',
+  trial_index: 41,
+  time_elapsed: 261487,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  study_id: '676a5c1061b4a84202022a46',
+  session_id: '67c22d807513e370259c9cb6'
+}
+req.body
+{
+  rt: 14047,
+  trial_type: 'image-slider-response',
+  trial_index: 40,
+  time_elapsed: 258251,
+  internal_node_id: 0,
+  subject: '66f5d2424e2c1948e2b8f020',
+  response: '97',
+  pic: 'list2/20-64-6-corrugatedsteel-A.png',
+  block: 'blockpics',
+  study_id: '676a5c1061b4a84202022a46',
+  stimulus: 'list2/20-64-6-corrugatedsteel-A.png',
+  session_id: '67c22d807513e370259c9cb6'
+}

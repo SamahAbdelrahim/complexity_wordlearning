@@ -107,3 +107,44 @@ jsPsych.run(timeline)
 //     },
 //     choices: ["Next"]
 // };
+
+
+var practice_demo = {
+    timeline: [
+        {
+            type: jsPsychHtmlButtonResponse,
+            stimulus: function() {
+                var stimulus = jsPsych.timelineVariable('stimulus');
+                var direction = jsPsych.timelineVariable('direction');
+                var explanation = jsPsych.timelineVariable('explanation');
+
+                return 
+                    <div style="position: relative; text-align: center;">
+                        <img src="${stimulus}" style="height: 200px;">
+                        <br>
+                        <p style="font-size: 20px;">${explanation}</p>
+                        <div style="position: relative; width: 300px; margin: auto;">
+                            <input type="range" min="0" max="100" value="${direction}" 
+                                disabled style="width: 100%;">
+                            <div id="arrow" style="position: absolute; left: ${direction}%; top: -30px;
+                                font-size: 24px; transition: left 1s;">⬆</div>
+                        </div>
+                    </div>
+                ;
+            },
+            choices: ['Next'],
+            button_html: '<button style="font-size: 18px; padding: 10px 20px;">%choice%</button>',
+            trial_duration: 10000,
+        }
+    ],
+    timeline_variables: practice_image_data2.map(item => ({
+        stimulus: item.stimulus,
+        direction: item.correct_below !== undefined ? 20 : 80,  // Left for simple, right for complex
+        explanation: item.correct_below !== undefined 
+            ? "If i think this is a ** slightly simple** shape, I move the slider slightly left." 
+            : "If i think this is a **very complex** shape, I move the slider way to the right."
+    })),
+    randomize_order: false
+};
+
+timeline.push(practice_demo)

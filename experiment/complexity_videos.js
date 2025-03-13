@@ -88,8 +88,8 @@ var opening = {
         '<div style="text-align: center; margin: 50px;"></div>' +
         '<div style="text-align: center; margin: 0 auto; max-width: 600px; font-size: 20px; line-height: 1.6; color: #333; padding: 20px;">' +
         '<p>In this experiment, on each trial, you will use a slider to make judgments about how simple or complex some objects are.</p>' +
-        '<p>Moving the slider to the left indicates <strong>simplicity</strong> (i.e., the object is simple), while moving it to the right indicates <strong>complexity</strong> (i.e., the object is complex).</p>' + 
-        "<p style='font-size:18px; color: #555;'>You can adjust the slider freely to indicate <strong>how simple or complex</strong> you think the object is, from <em>very or slightly simple</em> to <em>very or slightly complex</em>.</p>"+
+        '<p>Moving the slider from the middle to the left indicates <strong>simplicity</strong> (i.e., the object is simple), while moving from the middle it to the right indicates <strong>complexity</strong> (i.e., the object is complex).</p>' + 
+        "<p style='font-size:18px; color: #555;'>You can adjust the slider freely, across all the range, to indicate <strong>how simple or complex</strong> you think the object is, from <em>slightly or very simple</em> to <em>slightly or very complex</em>.</p>"+
         '<p><strong>Let’s see some examples.</strong></p>' +
         '</div>'
     ],
@@ -121,7 +121,9 @@ timeline.push(opening);
 
 var practice_image_data = [
     { stimulus: "concave.png", correct_above: 50 }, 
-    { stimulus: "circle.png", correct_below: 50 }
+    { stimulus: "circle.png", correct_below: 50 }, 
+    { stimulus: "polygon.png", correct_below: 50 } , 
+    { stimulus: "random.png", correct_below: 50 }
 ];
 
 var practice_image_data2 = [
@@ -135,39 +137,96 @@ var practice_demo = {
             type: jsPsychHtmlButtonResponse,
             stimulus: function() {
                 var stimulus = jsPsych.timelineVariable('stimulus');
-                var direction = jsPsych.timelineVariable('direction');
                 var explanation = jsPsych.timelineVariable('explanation');
+                var start_position = 50;  // Start at the middle
 
                 return `
-                    <div style="position: relative; text-align: center;">
-                        <img src="${stimulus}" style="height: 200px;">
-                        <br>
-                        <p style="font-size: 20px;">${explanation}</p>
-                        <div style="position: relative; width: 300px; margin: auto;">
-                            <input type="range" min="0" max="100" value="${direction}" 
-                                disabled style="width: 100%;">
-                            <div id="arrow" style="position: absolute; left: ${direction}%; top: -30px;
-                                font-size: 24px; transition: left 1s;">⬆</div>
+                    <div style="position: relative; text-align: center; padding: 20px;">
+                        <img src="${stimulus}" style="height: 200px; margin-bottom: 10px;">
+                        
+                        <p style="font-size: 22px; color: #333;">
+                            ${explanation}
+                        </p>
+
+                        <div style="position: relative; width: 350px; margin: auto;">
+                            <!-- Slider track -->
+                            <input type="range" min="0" max="100" value="${start_position}" 
+                                disabled style="width: 100%; opacity: 0.6; cursor: not-allowed;">
+                            
+                            <!-- Arrow indicator (now below the slider) -->
+                            <div id="arrow" style="position: absolute; left: ${start_position}%; 
+                                top: 30px; font-size: 28px; transition: left 3s ease-in-out;
+                                transform: translateX(-50%);">⬆</div> 
+
+                            <!-- Labels below slider -->
+                            <div style="display: flex; justify-content: space-between; margin-top: 40px;">
+                                <span style="font-size: 18px; color: #555;">Very Simple</span>
+                                <span style="font-size: 18px; color: #555;">Neutral</span>
+                                <span style="font-size: 18px; color: #555;">Very Complex</span>
+                            </div>
                         </div>
                     </div>
                 `;
             },
             choices: ['Next'],
-            button_html: '<button style="font-size: 18px; padding: 10px 20px;">%choice%</button>',
-            trial_duration: 6000,
+            button_html: '<button class="jspsych-btn" style="font-size: 18px; padding: 10px 20px; margin-top: 20px; background-color: #8C1515; color: white; border-radius: 8px;">%choice%</button>',
+            trial_duration: 9000,
+            on_load: function() {
+                var direction = jsPsych.timelineVariable('direction'); // Get the target position
+                var arrow = document.getElementById("arrow");
+                var slider = document.querySelector("input[type=range]"); // Get the slider
+            
+                // Delay the movement slightly for effect
+                setTimeout(() => {
+                    arrow.style.left = direction + "%";
+                    
+                    // Smoothly update the slider value in sync with the arrow
+                    let currentValue = 50;
+                    let step = (direction - currentValue) / 50; // Break movement into steps
+                    
+                    let interval = setInterval(() => {
+                        currentValue += step;
+                        slider.value = currentValue;
+                        if ((step > 0 && currentValue >= direction) || (step < 0 && currentValue <= direction)) {
+                            clearInterval(interval); // Stop when the target is reached
+                        }
+                    }, 50); // Adjust speed of movement
+                }, 500);
+            } // Delay animation slightly for effect
+            
         }
     ],
     timeline_variables: practice_image_data2.map(item => ({
-        stimulus: item.stimulus,
-        direction: item.correct_below !== undefined ? 20 : 80,  // Left for simple, right for complex
+        stimulus: item.stimulus,  // Make sure images are in the correct folder
+        direction: item.correct_below !== undefined ? 35 : 100,  // Moves left for simple, right for complex
         explanation: item.correct_below !== undefined 
-            ? "If i think this is a ** slightly simple** shape, I move the slider slightly left." 
-            : "If i think this is a **very complex** shape, I move the slider way to the right."
+            ? "If I think this object is <strong>slightly simple</strong>, I move the slider <strong>slightly</strong> to the left."
+            : "If I think this object is <strong>very complex</strong>, i move the slider <strong>all the way</strong> to the right."
     })),
     randomize_order: false
 };
 
-timeline.push(practice_demo)
+
+timeline.push(practice_demo);
+
+
+var practice_intro = {
+    type: jsPsychInstructions,
+    pages: [
+        '<div style="text-align: center; margin: 50px;"></div>' +
+        '<div style="text-align: center; margin: 0 auto; max-width: 600px; font-size: 20px; line-height: 1.6; color: #333; padding: 20px;">' +
+        '<p>Now, before starting the actual experiment , you get to practice a little bit yourself</p>' +
+        '<p> you will see some <strong>pictures</strong> of objects, please remember to judge how simple or complex the objects are by using the slider</p>' +
+        '<p><strong>Let’s begin</strong></p>' +
+        '</div>'
+    ],
+    show_clickable_nav: true,
+    button_label: "Next",
+    button_html: '<button class="jspsych-btn" style="font-size: 20px; padding: 12px 24px; background-color: #8C1515; color: white; border: none; border-radius: 10px; cursor: pointer;">%choice%</button>'
+};
+
+
+timeline.push(practice_intro);
 
 // Shuffle the practice images
 practice_image_data = jsPsych.randomization.shuffle(practice_image_data);
@@ -177,27 +236,34 @@ var practice_complexity = {
     timeline: practice_image_data.map(item => ({
         type: jsPsychImageSliderResponse,
         stimulus: item.stimulus,
-        labels: ['Simple', 'Complex'],
+        labels: ['Very Simple', 'Very Complex'],
         prompt: "<p style='font-size:22px; margin-bottom: 15px;'>How complex is this object?</p>" +
-                "<p style='font-size:18px; color: #555;'>Move the slider to the left for <strong>simple</strong> objects and to the right for <strong>complex</strong> objects.</p>",
+                "<p style='font-size:18px; color: #555;'>Move the slider to match how complex you think the object is.</p>",
         stimulus_height: 200,
         require_movement: true,
 
         on_finish: function(data) {
             var response = data.response;
-            var quartile = response < 25 ? "way left"
-                        : response < 50 ? "slightly left"
-                        : response < 75 ? "slightly right"
-                        : "way right";
 
-            var interpretation = quartile.includes("left") 
-                ? `That means you think this object is <strong>${quartile === "way left" ? "very simple" : "slightly simple"}</strong>.`
-                : `That means you think this object is <strong>${quartile === "way right" ? "very complex" : "slightly complex"}</strong>.`;
+            // Generate a fluid feedback message
+            var interpretation;
+            if (response < 15) {
+                interpretation = "You thought this object was **extremely simple**.";
+            } else if (response < 25) {
+                interpretation = "You thought this object was **fairly simple**.";
+            } else if (response < 50) {
+                interpretation = "You thought this object was **moderately simple**.";
+            } else if (response < 75) {
+                interpretation = "You thought this object was **moderately complex**.";
+            } else if (response < 85) {
+                interpretation = "You thought this object was **fairly complex**.";
+            }else {
+                interpretation = "You thought this object was **extremely complex**.";
+            }
 
             jsPsych.data.addDataToLastTrial({
                 pic: item.stimulus,
                 response_value: response,
-                response_quartile: quartile,
                 feedback: interpretation,
                 block: "practice block"
             });
@@ -210,8 +276,9 @@ var feedback_trial = {
     type: jsPsychHtmlButtonResponse,
     stimulus: function() {
         var last_trial = jsPsych.data.getLastTrialData().values()[0];
-        return `<p style='font-size:22px;'><strong>You moved the slider ${last_trial.response_quartile}.</strong></p>
-                <p style='font-size:18px; color:#333;'>${last_trial.feedback}</p>`;
+        return `<p style='font-size:18px;'>It seems like</p>
+                <p style='font-size:18px; color:#333;'>${last_trial.feedback}</p>
+                <p style='font-size:18px; color:#666;'>Remember, you can use the entire range of the slider to match your intuition.</p>`;
     },
     choices: ["Next"],
     button_html: '<button class="jspsych-btn" style="font-size:18px; padding: 12px 24px; background-color:#8C1515; color:white; border:none; border-radius:8px; cursor:pointer;">%choice%</button>'
@@ -228,11 +295,15 @@ var full_practice_complexity = {
 // Add to timeline
 timeline.push(full_practice_complexity);
 
+
 var start = {
     type: jsPsychInstructions,
     pages: [
         '<div style="text-align: center; margin: 50px 0;">' +
-        '<p style="font-size: 24px; font-weight: bold;">Now, let’s begin!</p>' +
+        '<p style="font-size: 24px;"> Instead of pictures, now you will see <strong>short *videos* of objects</strong> </p>' +
+        '<p style="font-size: 22px; font-weight: bold;"> Response is only allowed after the video finish playing</p>' +
+        '<p style="font-size: 20px; font-weight: bold;"> Everythings else is the same</p>' +
+        '<p style="font-size: 20px;">Now, let’s begin!</p>' +
         '<p style="font-size: 18px; color: #555;">Click the button below to start the experiment.</p>' +
         '</div>'
     ],
@@ -249,7 +320,7 @@ var block_pics = {
         {
             type: jsPsychVideoSliderResponse,
             stimulus: jsPsych.timelineVariable('stimulus'),
-            labels: ['simple', 'complex'],
+            labels: ['very Simple', 'Very Complex'],
             prompt: "<p style='margin-bottom: 5px;'>How complex is this object?</p>", // Adjust prompt spacing
             stimulus_height: 350, // Image height
 
@@ -267,6 +338,21 @@ var block_pics = {
             },
 
             require_movement: true,
+            response_allowed_while_playing: false, // Allow response after first playback
+
+            on_load: function() {
+                let videoElement = document.querySelector("video");
+                console.log("vid elemtn", videoElement);
+
+                if (videoElement) {
+                    //videoElement.play(); // First play
+                    videoElement.onended = function() {
+                        videoElement.currentTime = 0; // Reset video time
+                        videoElement.play(); // Play again
+                        videoElement.onended = null; // Remove the event to prevent looping
+                    };
+                }
+            },
 
             on_finish: function(data) {
                 var currentPic = jsPsych.timelineVariable('stimulus');
