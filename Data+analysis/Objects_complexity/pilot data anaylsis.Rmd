@@ -15,17 +15,103 @@ library(here)
 library(lme4)  
 library(papaja)
 library(knitr)        # for knitting RMarkdown 
+library(dplyr)
+library(stringr)
 ```
 
 ```{r, data}
-data <- read_csv(here("data", "data.csv"))
+data <- read_csv(here("data", "pilot_data12.csv"))
 
 df <- data %>% filter(block == "blockpics") %>% select("subject", "block", "response", "pic") %>% 
-  mutate(response = as.factor(response), pic = as.factor(pic))
+  mutate(pic = as.factor(pic))
+```
+``` {r}
+
+df <- df %>%
+  mutate(
+    list_number = str_extract(pic, "list\\d+") %>% str_remove("list"),
+    pic_details = str_extract(pic, "(?<=list\\d/)[^\\.]+"),  # Extract everything after 'listX/'
+    split_details = str_split(pic_details, "-", simplify = TRUE),
+    
+    object_id = split_details[,1],
+    seed = split_details[,2],
+    num_extrusions = split_details[,3],
+    material = split_details[,4] , 
+    beveling = ifelse(str_detect(pic, "B"), 1, 0)
+  ) %>%
+  select(-pic_details, -split_details)  
+
+
+## %>% str_replace("\\d*$", "")  # Remove trailing digits from material
+
+df <- df %>%
+  mutate(material = str_trim(material),  # Remove leading/trailing spaces
+         material = str_replace_all(material, " +", ""),  # Remove extra spaces within words
+         material = case_when(
+           material %in% c("printedmaterial007","paintedmetal007", "printedmaterial 007", "printed material 007") ~ "printedmaterial007",
+           material == "corrguatedsteel" ~ "corrugatedsteel",  # Fix typo
+           material == "fabric05" ~ "fabric05",
+           material == "metal007" ~ "metal007",
+           material == "007" ~ "metal007",  # Standardizing "007" as "metal007" if it represents the same material
+           material == "05" ~ "fabric05",  # Standardizing "05" as "fabric05" if that's correct
+           material == "074" ~ "074",  # Keep if valid, otherwise clarify its meaning
+           material == "031" ~ "031",  # Same for "031"
+           TRUE ~ material  # Keep unchanged if not listed
+         ))
+
+# Check the cleaned values
+unique(df$material)
+```
+
+``` {r, fig.width=6, fig.height=3}
+df %>% group_by(pic) %>% summarize(count = n(), mean = mean(as.numeric(response)), sd = sd(as.numeric(response))) %>% filter (pic == "list4/11-34-9-fabric05-AB.png") 
+df %>% filter (pic == "list4/11-34-9-fabric05-AB.png") 
 ```
 
 
-``` {r, fig.width=6, fig.height=3}
-df %>% group_by(pic) %>% summarise(n = n()) 
-df %>% filter (pic == "list4/11-34-9-fabric05-AB.png") 
+
+#visualizations
+
+## distribution of responses:
+```{r, fig.width=6, fig.height=3}
+ggplot(df, aes(x = as.numeric(response))) +
+  geom_histogram(bins = 20, fill = "steelblue", alpha = 0.7) +
+  theme_minimal() +
+  labs(title = "Distribution of Responses", x = "Response", y = "Count")
+```
+
+```{r, fig.width=6, fig.height=3}
+df %>% group_by(object_id) %>% summarize(count = n(), mean = mean(as.numeric(response)), sd = sd(as.numeric(response))) %>% ggplot(aes(x = object_id, y = mean)) + geom_bar(stat = "identity") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1)) 
+
+#add error bars
+df %>% group_by(object_id) %>% summarize(count = n(), mean = mean(as.numeric(response)), sd = sd(as.numeric(response))) %>% ggplot(aes(x = object_id, y = mean)) + geom_bar(stat = "identity") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1)) + geom_errorbar(aes(ymin = mean - sd, ymax = mean + sd), width = 0.2)
+
+# use actual response values instead of the mean (do not summaraize) with material as color
+df %>%
+  ggplot(aes(x = factor(object_id), y = as.numeric(response), color = material)) +
+  geom_jitter(width = 0.2, alpha = 0.7) +  # Jitter to avoid overplotting
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(title = "Response Distribution by Object ID", x = "Object ID", y = "Response")
+
+
+#add error bars
+df %>% group_by(material) %>% summarize(count = n(), mean = mean(as.numeric(response)), sd = sd(as.numeric(response))) %>% ggplot(aes(x = material, y = mean)) + geom_bar(stat = "identity") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1)) + geom_errorbar(aes(ymin = mean - sd, ymax = mean + sd), width = 0.2)
+
+```
+``` {r}
+ggplot(df, aes(x = as.factor(num_extrusions), y = response)) +
+  geom_boxplot(fill = "lightblue") +
+  theme_minimal() +
+  labs(title = "Response by Number of Extrusions", x = "Number of Extrusions", y = "Response")
+
+```
+
+``` {r}
+ggplot(df, aes(x = material, y = response)) +
+  geom_violin(fill = "lightgreen", alpha = 0.6) +
+  theme_minimal() +
+  labs(title = "Response by Material", x = "Material", y = "Response") +
+  coord_flip()  # Flips for better readability if many materials
+
 ```
