@@ -64,7 +64,8 @@ unique(df$material)
 ```
 
 ``` {r, fig.width=6, fig.height=3}
-df %>% group_by(pic) %>% summarize(count = n(), mean = mean(as.numeric(response)), sd = sd(as.numeric(response))) %>% filter (pic == "list4/11-34-9-fabric05-AB.png") 
+df %>% group_by(pic) %>% summarize(count = n(), mean = mean(as.numeric(response)), sd = sd(as.numeric(response))) %>% filter (pic == "list4/11-34-9-fabric05-AB.png")
+
 df %>% filter (pic == "list4/11-34-9-fabric05-AB.png") 
 ```
 
@@ -99,13 +100,45 @@ df %>%
 df %>% group_by(material) %>% summarize(count = n(), mean = mean(as.numeric(response)), sd = sd(as.numeric(response))) %>% ggplot(aes(x = material, y = mean)) + geom_bar(stat = "identity") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1)) + geom_errorbar(aes(ymin = mean - sd, ymax = mean + sd), width = 0.2)
 
 ```
-``` {r}
-ggplot(df, aes(x = as.factor(num_extrusions), y = response)) +
-  geom_boxplot(fill = "lightblue") +
+interaction between number of extrusions and material
+```{r}
+# 1️⃣ geom bar
+df %>% group_by(num_extrusions, material) %>% summarize(count = n(), mean = mean(as.numeric(response)), sd = sd(as.numeric(response))) %>% ggplot(aes(x = num_extrusions, y = mean, fill = material)) + geom_bar(stat = "identity") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1)) 
+
+df %>% group_by(num_extrusions, material) %>% summarize(count = n(), mean = mean(as.numeric(response)), sd = sd(as.numeric(response))) %>% ggplot(aes(x = num_extrusions, y = mean, fill = material)) + geom_bar(stat = "identity", position = "dodge2") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1)) 
+
+
+# 2️⃣ Interaction Line Plot (Good for Detecting Trends)
+df %>%
+  group_by(num_extrusions, material) %>%
+  summarize(mean_response = mean(as.numeric(response)), .groups = "drop") %>%
+  ggplot(aes(x = as.factor(num_extrusions), y = mean_response, color = material, group = material)) +
+  geom_line() +
+  geom_point(size = 3) +
   theme_minimal() +
-  labs(title = "Response by Number of Extrusions", x = "Number of Extrusions", y = "Response")
+  labs(x = "Number of Extrusions", y = "Mean Response", title = "Interaction Between Number of Extrusions and Material")
+
+
+# 3️⃣ Interaction Boxplot (Good for Detecting Variability and interaction i.e. spread, median)
+df %>%
+  ggplot(aes(x = as.factor(num_extrusions), y = as.numeric(response), fill = material)) +
+  geom_boxplot(alpha = 0.7, outlier.shape = NA) +  # Boxplot to show distribution
+  geom_jitter(position = position_jitterdodge(jitter.width = 0.2), alpha = 0.4) + # Raw data points
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "Number of Extrusions", y = "Response", title = "Effect of Number of Extrusions & Material")
+
+# 4️⃣ Interaction Violin Plot (Good for Detecting Distribution for example multi-modal)
+df %>%
+  ggplot(aes(x = as.factor(num_extrusions), y = as.numeric(response), fill = material)) +
+  geom_violin(alpha = 0.5) + 
+  geom_jitter(position = position_jitterdodge(jitter.width = 0.2), alpha = 0.3) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "Number of Extrusions", y = "Response", title = "Distribution of Responses by Material and Extrusions")
 
 ```
+
 
 ``` {r}
 ggplot(df, aes(x = material, y = response)) +
@@ -113,5 +146,21 @@ ggplot(df, aes(x = material, y = response)) +
   theme_minimal() +
   labs(title = "Response by Material", x = "Material", y = "Response") +
   coord_flip()  # Flips for better readability if many materials
+
+```
+
+# Stats
+``` {r}
+# 1️⃣ ANOVA
+aov_res <- aov(response ~ material + num_extrusions + material:num_extrusions + Error(subject), data = df)
+
+plot(aov_res$residuals)
+
+```
+
+```{r}
+# 2️⃣ Post-hoc Test, Linear Mixed Models (LMMs)
+lme4::lmer(as.numeric(response) ~ material * num_extrusions + (1 | subject), data = df)
+summary(lme4::lmer(as.numeric(response) ~ material * num_extrusions + (1 | subject), data = df))
 
 ```
