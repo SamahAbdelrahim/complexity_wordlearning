@@ -1,3 +1,5 @@
+
+
 .option_container {
     display: flex;
     flex-direction: row;
@@ -11,5 +13,21 @@
 
 .option {
     font-size: 24px;
+}
+
+/* Fix slider labels to prevent overflow */
+.jspsych-sliders-response .jspsych-slider-label {
+    display: inline-block;  /* Keeps labels in line */
+    width: 45%;  /* Ensures they don't stretch too far */
+    text-align: center;  /* Centers text under the slider */
+    font-size: 18px;
+    color: #555;
+    white-space: nowrap;  /* Prevents labels from wrapping awkwardly */
+}
+
+/* Ensure slider itself is nicely positioned */
+.jspsych-sliders-response input[type="range"] {
+    width: 85%;  /* Keeps it within the box */
+    margin: 10px auto;  /* Adds spacing above & below */
 }
 

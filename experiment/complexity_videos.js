@@ -4,6 +4,167 @@
 //       }
 //   });
 
+
+var globalStyles = `
+    <style>
+
+        /* General Page Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+    
+        /* Main Content Box */
+        .jspsych-display-element {
+            max-width: 95%; /* Increased to give more room */
+            width: 95vw;
+            min-width: 850px;
+            background: white;
+            padding: 30px 40px; /* Increased horizontal padding */
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 5vh auto;
+            overflow: hidden;
+        }
+    
+        /* Improve Button Styles */
+        .jspsych-btn {
+            background-color: #8C1515;
+            color: white;
+            font-size: 18px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        .jspsych-btn:hover {
+            background-color: #700F0F;
+        }
+    
+        /* Improve Slider Styles */
+        input[type="range"] {
+            width: 80%; /* Reduced from 90% to prevent label overflow */
+            accent-color: #8C1515;
+            margin: 0 auto; /* Center the slider */
+            display: block; /* Ensure it takes its own line */
+        }
+    
+        /* Make Images & Videos More Prominent */
+        img, video {
+            max-width: 100%; /* Ensures they don't overflow */
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .jspsych-content {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        .jspsych-btn {
+            font-size: 18px;
+            padding: 12px 24px;
+            background-color: #8C1515; 
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .jspsych-btn:hover {
+            background-color: #6E1111;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0px); }
+        }
+
+        /* Add specific styles for slider labels */
+        .jspsych-slider-response-container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        /* Style for the labels specifically */
+        .jspsych-slider-response-labels {
+            display: flex;
+            justify-content: space-between;
+            width: 80%; /* Match slider width */
+            margin: 10px auto;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+`;
+
+// Inject global styles into the page
+document.head.insertAdjacentHTML('beforeend', globalStyles);
+
+var sliderStyles = `
+    <style>
+        /* General slider container adjustments */
+        .slider-container {
+            width: 85%; /* Reduced from 90% */
+            max-width: 550px; /* Reduced from 600px */
+            margin: auto;
+            text-align: center;
+            position: relative;
+            padding: 0 20px; /* Added padding to keep labels from edges */
+        }
+
+        /* Ensuring labels don't overflow */
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 95%; /* Reduced from 100% */
+            margin-top: 5px;
+            font-size: 16px;
+            color: #555;
+            white-space: normal;
+            max-width: 90%; /* Reduced from 95% */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Slider bar styling */
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(to right, #1F618D, #D35400);
+            border-radius: 4px;
+            outline: none;
+            transition: background 0.3s ease-in-out;
+        }
+
+        /* Custom thumb (slider handle) */
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border: 2px solid #8C1515;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+`;
+document.head.insertAdjacentHTML('beforeend', sliderStyles);
+
+
 var jsPsych = initJsPsych({
     use_webaudio: false,
     on_finish: function(data){
@@ -89,8 +250,8 @@ var opening = {
         '<div style="text-align: center; margin: 0 auto; max-width: 600px; font-size: 20px; line-height: 1.6; color: #333; padding: 20px;">' +
         '<p>In this experiment, on each trial, you will use a slider to make judgments about how simple or complex some objects are.</p>' +
         '<p>Moving the slider from the middle to the left indicates <strong>simplicity</strong> (i.e., the object is simple), while moving from the middle it to the right indicates <strong>complexity</strong> (i.e., the object is complex).</p>' + 
-        "<p style='font-size:18px; color: #555;'>You can adjust the slider freely, across all the range, to indicate <strong>how simple or complex</strong> you think the object is, from <em>slightly or very simple</em> to <em>slightly or very complex</em>.</p>"+
-        '<p><strong>Let’s see some examples.</strong></p>' +
+        '<p style="font-size:18px; color: #555;">You can adjust the slider freely, across all the range, to indicate <strong>how simple or complex</strong> you think the object is, from <em>slightly or very simple</em> to <em>slightly or very complex</em>.</p>' +
+        '<p><strong>Let\'s see some examples.</strong></p>' +
         '</div>'
     ],
     on_finish: function(data) {
@@ -215,9 +376,9 @@ var practice_intro = {
     pages: [
         '<div style="text-align: center; margin: 50px;"></div>' +
         '<div style="text-align: center; margin: 0 auto; max-width: 600px; font-size: 20px; line-height: 1.6; color: #333; padding: 20px;">' +
-        '<p>Now, before starting the actual experiment , you get to practice a little bit yourself</p>' +
-        '<p> you will see some <strong>pictures</strong> of objects, please remember to judge how simple or complex the objects are by using the slider</p>' +
-        '<p><strong>Let’s begin</strong></p>' +
+        '<p>Now, before starting the actual experiment, you get to practice a little bit yourself</p>' +
+        '<p>you will see some <strong>pictures</strong> of objects, please remember to judge how simple or complex the objects are by using the slider</p>' +
+        '<p><strong>Let\'s begin</strong></p>' +
         '</div>'
     ],
     show_clickable_nav: true,
@@ -237,8 +398,12 @@ var practice_complexity = {
         type: jsPsychImageSliderResponse,
         stimulus: item.stimulus,
         labels: ['Very Simple', 'Very Complex'],
-        prompt: "<p style='font-size:22px; margin-bottom: 15px;'>How complex is this object?</p>" +
-                "<p style='font-size:18px; color: #555;'>Move the slider to match how complex you think the object is.</p>",
+        prompt: `
+        <div class="slider-container">
+            <p style="font-size:22px; margin-bottom: 15px;">How complex is this object?</p>
+            <p style="font-size:18px; color: #555;">Move the slider to the left for <strong>simple</strong> objects and to the right for <strong>complex</strong> objects.</p>
+        </div>
+    `,
         stimulus_height: 200,
         require_movement: true,
 
@@ -276,13 +441,49 @@ var feedback_trial = {
     type: jsPsychHtmlButtonResponse,
     stimulus: function() {
         var last_trial = jsPsych.data.getLastTrialData().values()[0];
-        return `<p style='font-size:18px;'>It seems like</p>
-                <p style='font-size:18px; color:#333;'>${last_trial.feedback}</p>
-                <p style='font-size:18px; color:#666;'>Remember, you can use the entire range of the slider to match your intuition.</p>`;
+        var feedbackText = last_trial.feedback;
+        var responseValue = last_trial.response_value;
+
+        // Determine feedback color (blue for simple, orange for complex)
+        var feedbackColor = responseValue < 50 ? "#1F618D" : "#D35400"; // Blue for simple, orange for complex
+        
+
+        return `
+        
+            <div style="
+                max-width: 600px; 
+                margin: auto; 
+                padding: 20px; 
+                border-radius: 12px; 
+                background-color: #F8F9F9; 
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                opacity: 0;
+                animation: fadeIn 0.8s ease-in-out forwards;
+            ">
+                <p style="font-size: 22px; font-weight: bold; color: ${feedbackColor};">
+                    Your response:
+                </p>
+                <p style="font-size: 20px; font-weight: 500; color: #333; padding: 10px;">
+                    ${feedbackText}
+                </p>
+                <p style="font-size: 16px; color: #555; margin-top: 10px;">
+                    There are no right or wrong answers—trust your intuition and feel free to use the full range of the slider.
+                </p>
+            </div>
+
+            <style>
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(10px); }
+                    to { opacity: 1; transform: translateY(0px); }
+                }
+            </style>
+        `;
     },
     choices: ["Next"],
-    button_html: '<button class="jspsych-btn" style="font-size:18px; padding: 12px 24px; background-color:#8C1515; color:white; border:none; border-radius:8px; cursor:pointer;">%choice%</button>'
+    button_html: '<button class="jspsych-btn" style="font-size:18px; padding: 12px 24px; background-color:#8C1515; color:white; border:none; border-radius:8px; cursor:pointer; margin-top: 20px;">%choice%</button>'
 };
+
 
 // Combine trials (slider + feedback) in sequence
 var full_practice_complexity = {
@@ -302,8 +503,8 @@ var start = {
         '<div style="text-align: center; margin: 50px 0;">' +
         '<p style="font-size: 24px;"> Instead of pictures, now you will see <strong>short *videos* of objects</strong> </p>' +
         '<p style="font-size: 22px; font-weight: bold;"> Response is only allowed after the video finish playing</p>' +
-        '<p style="font-size: 20px; font-weight: bold;"> Everythings else is the same</p>' +
-        '<p style="font-size: 20px;">Now, let’s begin!</p>' +
+        '<p style="font-size: 20px; font-weight: bold;"> Everything else is the same</p>' +
+        '<p style="font-size: 20px;">Now, let\'s begin!</p>' +
         '<p style="font-size: 18px; color: #555;">Click the button below to start the experiment.</p>' +
         '</div>'
     ],
@@ -317,43 +518,26 @@ timeline.push(start);
 
 var block_pics = {
     timeline: [
+        // First video playback (initial play, no response allowed)
         {
             type: jsPsychVideoSliderResponse,
             stimulus: jsPsych.timelineVariable('stimulus'),
             labels: ['very Simple', 'Very Complex'],
             prompt: "<p style='margin-bottom: 5px;'>How complex is this object?</p>", // Adjust prompt spacing
             stimulus_height: 350, // Image height
-
             stimulus_css: {
                 "margin-top": "-40px"  // Moves image UP
             },
-
             slider_container_css: {
                 "margin-top": "-60px", // Moves slider UP
                 "position": "relative"
             },
-
             button_css: {
                 "margin-top": "-50px" // Moves the Continue button UP
             },
-
-            require_movement: true,
-            response_allowed_while_playing: false, // Allow response after first playback
-
-            on_load: function() {
-                let videoElement = document.querySelector("video");
-                console.log("vid elemtn", videoElement);
-
-                if (videoElement) {
-                    //videoElement.play(); // First play
-                    videoElement.onended = function() {
-                        videoElement.currentTime = 0; // Reset video time
-                        videoElement.play(); // Play again
-                        videoElement.onended = null; // Remove the event to prevent looping
-                    };
-                }
-            },
-
+            require_movement: true, // Require user to move the slider
+            response_allowed_while_playing: false, // Initially not allowed, during the first play
+            
             on_finish: function(data) {
                 var currentPic = jsPsych.timelineVariable('stimulus');
                 var blockname = "blockpics";
@@ -362,12 +546,29 @@ var block_pics = {
                     pic: currentPic[0],
                     block: blockname,
                 });
+
+                // // Get the video element and handle the second playback
+                // let videoElement = document.querySelector("video");
+
+                // if (videoElement) {
+                //     // Wait for the first playback to finish, then allow response and play again
+                //     videoElement.onended = function() {
+                //         // Enable response after the second playback begins
+                //         jsPsych.getCurrentTrial().response_allowed_while_playing = true;
+                //     };                   
+                // }
             }
         },
+
+        // Second video playback (response allowed)
+
     ],
     timeline_variables: chosenarray,
     randomize_order: true
 };
+
+timeline.push(block_pics);
+
 
 timeline.push(block_pics);
 
@@ -390,5 +591,3 @@ timeline.push(goodbye);
 
 
 jsPsych.run(timeline);
-
-//https://imagetostl.com/convert/file/stl/to/mp4#google_vignette 
