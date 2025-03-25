@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-// Define the schema for "complexity Logs" collection
-const ComplexityLogSchema = new mongoose.Schema({
+// Define the schema for "complexity Video Logs" collection
+const complexityVidSchema = new mongoose.Schema({
     rt: Number,
     trial_type: String,
     trial_index: Number,
@@ -17,6 +17,6 @@ const ComplexityLogSchema = new mongoose.Schema({
 });
 
 // Create the model for "complexitylogs" collection
-const ComplexityLog = mongoose.model('ComplexityLog', ComplexityLogSchema);
+const ComplexityVid = mongoose.model('complexityVid', complexityVidSchema);
 
-module.exports = ComplexityLog;
+module.exports = ComplexityVid;
